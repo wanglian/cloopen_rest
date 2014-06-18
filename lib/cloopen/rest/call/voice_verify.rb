@@ -1,10 +1,14 @@
 module Cloopen
   module REST
-    class Calls < InstanceResource
+
+    class VoiceVerify < ListResource
       def initialize(uri, cilent)
         super uri, cilent
-        resource :landing_calls,:voice_verify
       end
     end
+
+    class VoiceVerify < InstanceResource
+    end
+
   end
 end
