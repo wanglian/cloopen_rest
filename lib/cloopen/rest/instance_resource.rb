@@ -17,7 +17,7 @@ module Cloopen
       protected
 
       def set_up_properties_from(hash)
-        instance_variable_set "@response", Cloopen::REST::Response.new(hash)
+        instance_variable_set '@response', Cloopen::REST::Response.new(hash)
         self.class.instance_eval {attr_reader :response}
       end
 
